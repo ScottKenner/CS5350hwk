@@ -116,7 +116,8 @@ def voted(r = 1, epoch= 10):
                     #print(weight)
                 else:
                     corr_count+=1
-        print(meta_weights) #UNCOMMENT ME
+        #print(meta_weights) #UNCOMMENT ME
+        print('Skipping voted weights due to its large size, uncomment line 119 in Perceptron.py for that, or see voted_output.txt for an example output')
         itera =0
         total =0
         with open("bank-note/test.csv", 'r') as test:
@@ -193,7 +194,7 @@ def average(r = 1, epoch= 10):
                     y = np.array(-1)
                 total+= average_test(a,x,y)
         print('Average error is:',1-(total / itera))
-        print(weight)
+        #print(weight)
         print(a)
 
 
